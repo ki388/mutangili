@@ -1,0 +1,166 @@
+<?php
+include("authh.php");
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+ 
+
+</style>
+</head>
+<body style="background-color:rgb(0,55,28)">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" style="color:red" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="http://localhost/bank/logoutt.php"class="button">logout</a><br/>
+    <a href="#" class="button">change password</a><br/>
+	
+    <a href="#"class="button">loan</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer;color:blue;float:right"  onclick="openNav()">&#9776; <span style="color:white"></span></span>
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+</script>
+
+<h1 align="center" style="color:green" >JK BANK</h1>
+
+<div class="topnav" id="myTopnav">
+<a href="home.php" class="active">HOME</a>
+<a href="register.php" >REGISTER CUSTOMER</a>
+<a href="deposit.php" >DEPOSIT</a>
+<a href="withdraw.php" >WITHDRAW</a>
+<a href="transfer.php" >TRANSFER</a>
+
+<a href="ac.php" >CUSTOMER BANK STATEMENT</a>
+<a href="login.php" >BANKERS PORTAL</a>
+
+<a href="hom.php"  >LOAN</a>
+
+<a href="hom.php" >PAYBILLS</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars" style="font-size:48px;color:red"> </i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="IMG17.jpg"style="width:100%" height="400px">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="IMG11.jpg" style="width:100%" height="400px">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="IMG1.jpg" style="width:100%" height="400px">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <img src="IMG2.jpg" style="width:100%" height="400px">
+  <div class="text" align="right">kioko</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); 
+}
+</script>
+
+<div class="container">
+<ul>
+<li>
+<div class="title">CONTACT US
+</div>
+<h3  style="color:blue">phone number:<br/>0727807914,<br/>0798539184</h3 >
+<h4   style="color:blue">Email:<br/>joshuakioko724@gmail.com</h4 >
+<h3   style="color:blue">Instagram: @kiokojoshua</h3>
+<h3  style="color:blue">facebook: kiokojoshua</h3 >
+</li>
+<li>
+<div class="title">OUR PATNERS
+</div>
+<h3  style="color:blue">Kenya commercial bank</h3>
+<h3  style="color:blue">Western need</h3>
+<h3 style="color:blue">Consolideted bank</h3>
+<h3  style="color:blue">Equity bank</h3>
+<h3  style="color:blue">Family bank</h3>
+</li>
+<li>
+<div class="title">LINKS
+</div>
+<h3><a href="logg.php" class="button">Admin login</a></h3>
+<h3><a href="h.php" class="button">Our charges</a></h3>
+<h3><a href="hw.php" class="button">Currency exchange</a></h3>
+<h3><a href="hv.php" class="button">Custodian activities</a></h3>
+
+</li>
+<li>
+<div class="title">photos
+</div>
+<img src="IMG2.jpg" style="width:200px" height="200px">
+
+</li>
+
+</div>
+</ul>
+<div class="foooter">
+<p>&copy 2019 all rights reserved Jk bank</p>
+</div>
+
+
+
